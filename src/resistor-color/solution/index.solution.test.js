@@ -20,17 +20,3 @@ test('should return Invalid Colour', () => {
 
   expect(result).toEqual(expected)
 })
-
-test('should return 0 for Black', () => {
-  const expected = 0
-  const result = resistorColour('Black')
-
-  expect(result).toEqual(expected)
-})
-
-test('should return Invalid Colour', () => {
-  const expected = 'Invalid Colour'
-  const result = resistorColour()
-
-  expect(result).toEqual(expected)
-})

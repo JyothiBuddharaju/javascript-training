@@ -16,7 +16,14 @@
  * NOTE: call the function uppercaseStrings
  */
 
-export const uppercaseStrings = () => {}
+export const uppercaseStrings = (lowercaseStrings) => {
+    const uppercaseArray = lowercaseStrings.map((eachlowercaseString) => {
+        return eachlowercaseString.toUpperCase();
+})  
+// console.log(uppercaseArray);
+return uppercaseArray; 
+}
+
 
 /**
  * #### 2 ####
@@ -29,7 +36,13 @@ export const uppercaseStrings = () => {}
  * NOTE: call the function squareNumbers
  */
 
-export const squareNumbers = () => {}
+export const squareNumbers = (numbers) => {
+  const inputArray = numbers.map((number) => {
+      return number*number;
+  })
+  //  console.log(inputArray);
+ return inputArray;
+}
 
 /**
  * #### 3 ####
@@ -41,4 +54,10 @@ export const squareNumbers = () => {}
  * NOTE: call the function addNumberToNumbers
  */
 
-export const addNumberToNumbers = () => {}
+export const addNumberToNumbers = (n,numbers) => {
+  const resultArray = numbers.map((number) => {
+   return number+n;
+  })
+  // console.log(resultArray)
+ return resultArray;
+}

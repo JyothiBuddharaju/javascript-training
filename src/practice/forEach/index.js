@@ -16,7 +16,15 @@
  * NOTE: call the function evenNumbersCounter
  */
 
-export const evenNumbersCounter = () => {}
+export const evenNumbersCounter = (numbers) => {
+    let counter = 0; // initialise value of counter to 0
+    numbers.forEach((number) => {
+        if (number % 2 === 0) {
+            counter = counter + 1;
+        }
+    });
+    return counter;
+};
 
 /**
  * #### 2 ####
@@ -27,4 +35,14 @@ export const evenNumbersCounter = () => {}
  * NOTE: call the function vowelsCounter
  */
 
-export const vowelsCounter = () => {}
+export const vowelsCounter = (inputString) => {
+    const stringToArray = inputString.split('');
+    const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
+    let vowelCounter = 0;
+    stringToArray.forEach((letter) => {
+        if (vowelsArray.includes(letter)) {
+            vowelCounter = vowelCounter + 1;
+        }
+    });
+    return vowelCounter;
+}

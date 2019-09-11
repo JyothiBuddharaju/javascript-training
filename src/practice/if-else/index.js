@@ -20,7 +20,13 @@
  * NOTE: call the function legalAgeChecker
  */
 
-export const legalAgeChecker = () => {}
+export const legalAgeChecker = (age) => {
+  if (age >= 18) {
+    return 'No Challenge Required'
+  } else {
+    return 'Challenge Required'
+  }
+}
 
 /**
  * #### 2 ####
@@ -34,4 +40,10 @@ export const legalAgeChecker = () => {}
  * NOTE: call the function isValidString
  */
 
-export const isValidString = () => {}
+export const isValidString = (inputString) => {
+  if (inputString.length > 10) {
+    return false
+  } else {
+    return true
+  }
+}
