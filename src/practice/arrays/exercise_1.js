@@ -6,6 +6,14 @@
  * NOTE: Use the forEach method
  */
 
-const evenNumbersCounter = () => {}
+const evenNumbersCounter = (numbers) => {
+  let counter = 0; // initialise value of counter to 0
+  numbers.forEach((number) => {
+    if (number % 2 === 0) {
+      counter = counter + 1;
+    }
+  });
+  return counter;
+}
 
 export default evenNumbersCounter
