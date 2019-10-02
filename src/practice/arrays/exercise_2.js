@@ -7,10 +7,11 @@
  */
 
 const vowelsCounter = (inputString) => {
-  const newArray = inputString.split();
+  const newArray = inputString.split('');
+  // console.log(newArray);
   const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
   let counter = 0;
-  newArray.forEach((element, counter) => {
+  newArray.forEach((element) => {
     if (vowelsArray.includes(element)) {
       counter = counter + 1;
     }
