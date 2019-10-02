@@ -6,6 +6,10 @@
  * NOTE: use the reduce method
  */
 
-const sumOfNumbers = () => {}
-
+const sumOfNumbers = (inputArray) => {
+  const result = inputArray.reduce((accumulator, value) => {
+    return accumulator + value
+  }, 0);
+  return result;
+}
 export default sumOfNumbers

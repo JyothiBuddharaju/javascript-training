@@ -7,6 +7,12 @@
  * NOTE: use the map method
  */
 
-const addNumberToNumbers = () => {}
+const addNumberToNumbers = (number, inputArray) => {
+  const resultArray = inputArray.map((element) => {
+    return number + element
+  });
+  // console.log(resultArray);
+  return resultArray;
+}
 
 export default addNumberToNumbers
