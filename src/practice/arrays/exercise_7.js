@@ -6,6 +6,14 @@
  * NOTE: use the reduce method
  */
 
-const largestNumber = () => {}
+const largestNumber = (inputArray) => {
+  const result = inputArray.reduce((accumulator, number) => {
+    if (number === 6) {
+      return number;
+    }
+  }, 0);
+  console.log(result);
+  return result;
+}
 
 export default largestNumber

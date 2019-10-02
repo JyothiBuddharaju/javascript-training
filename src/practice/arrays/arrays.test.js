@@ -82,8 +82,8 @@ describe('Arrays - Exercise 6', () => {
 
 describe('Arrays - Exercise 7', () => {
   test('should return the largest number', () => {
-    const expected = 5
-    const actual = largestNumber([1, 2, 3, 4, 5])
+    const expected = 6
+    const actual = largestNumber([1, 2, 3, 4, 5, 6])
 
     expect(actual).toEqual(expected)
   })
