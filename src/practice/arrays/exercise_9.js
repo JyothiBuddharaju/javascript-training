@@ -5,6 +5,15 @@
  * NOTE: use the some method
  */
 
-const stringLengthChecker = () => {}
+const stringLengthChecker = (inputArray) => {
+  const result = inputArray.some((string) => {
+    if (string.length > 5) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return result;
+}
 
 export default stringLengthChecker
