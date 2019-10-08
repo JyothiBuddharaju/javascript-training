@@ -1,4 +1,4 @@
-# Javascript Training
+run # Javascript Training
 
 ### Getting Started
 
