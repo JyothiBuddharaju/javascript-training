@@ -6,6 +6,11 @@
  * NOTE: use the map method
  */
 
-const squareNumbers = () => {}
+const squareNumbers = (numbersArray) => {
+  const doSomething = (number) => {
+    return number * number
+  }
+  return numbersArray.map(doSomething);
+}
 
 export default squareNumbers

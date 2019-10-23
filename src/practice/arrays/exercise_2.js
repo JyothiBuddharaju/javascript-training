@@ -6,6 +6,17 @@
  * NOTE: Use the forEach method
  */
 
-const vowelsCounter = () => {}
+const vowelsCounter = (inputString) => {
+  const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
+  const letters = inputString.split('');
+  let counter = 0;
+  const doSomething = (letter) => {
+    if (vowelsArray.includes(letter)) {
+      counter = counter + 1;
+    }
+  }
+  letters.forEach(doSomething)
+  return counter;
+}
 
 export default vowelsCounter

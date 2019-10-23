@@ -6,6 +6,12 @@
  * NOTE: Use the map method
  */
 
-const uppercaseStrings = () => {}
+const uppercaseStrings = (inputArray) => {
+  const doSomething = (eachString) => {
+    return eachString.toUpperCase();
+  }
+  return inputArray.map(doSomething)
+}
+
 
 export default uppercaseStrings
