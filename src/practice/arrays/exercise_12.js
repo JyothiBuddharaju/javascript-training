@@ -6,8 +6,19 @@
  * otherwise return a string 'Sorry no such item found'
  * 
  * NOTE: use the find method
- */
+ *  
+ * */
 
-const itemFinder = () => {}
+
+const itemFinder = (inputArray, searchItem) => {
+  const result = (inputArray.find((element) => {
+    return element.includes(searchItem)
+  }))
+  if (result) {
+    return result
+  } else {
+    return 'Sorry no such item found'
+  }
+}
 
 export default itemFinder

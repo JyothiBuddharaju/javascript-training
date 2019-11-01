@@ -6,6 +6,13 @@
  * NOTE: use the filter method
  */
 
-const evenNumberFilter = () => {}
+const evenNumberFilter = (numbersArray) => {
+  const doSomething = (number) => {
+    if (number % 2 === 0) {
+      return number
+    }
+  }
+  return numbersArray.filter(doSomething)
+}
 
 export default evenNumberFilter

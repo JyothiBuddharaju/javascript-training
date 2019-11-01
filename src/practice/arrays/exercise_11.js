@@ -5,7 +5,11 @@
  * 
  * NOTE: use the join method
  */
+// a.join(); // 'Wind,Water,Fire'
 
-const arrayToString = () => {}
+
+const arrayToString = (inputArray, seperator = '') => {
+  return inputArray.join(seperator)
+}
 
 export default arrayToString

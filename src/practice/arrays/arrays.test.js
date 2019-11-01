@@ -135,7 +135,7 @@ describe('Arrays - Exercise 9', () => {
   })
 })
 
-describe.only('Arrays - Exercise 10', () => {
+describe('Arrays - Exercise 10', () => {
   test('should return true if item exists in the array', () => {
     const expected = 'Found Item'
     const actual = itemChecker('blue')
@@ -183,7 +183,7 @@ describe('Arrays - Exercise 12', () => {
   })
 })
 
-describe('Arrays - Exercise 13', () => {
+describe.only('Arrays - Exercise 13', () => {
   test('should return an array of only even numbers', () => {
     const expected = [2, 6, 8]
     const actual = evenNumberFilter([1, 5, 2, 13, 6, 21, 11, 8])
