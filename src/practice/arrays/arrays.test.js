@@ -122,7 +122,7 @@ describe('Arrays - Exercise 8', () => {
 describe('Arrays - Exercise 9', () => {
   test('should return true if any string is bigger than 5 characters', () => {
     const expected = true
-    const actual = stringLengthChecker(['car', 'dog', 'blue', 'rainbow'])
+    const actual = stringLengthChecker(['car', 'dog', 'blue', 'orange'])
 
     expect(actual).toEqual(expected)
   })
@@ -135,16 +135,16 @@ describe('Arrays - Exercise 9', () => {
   })
 })
 
-describe('Arrays - Exercise 10', () => {
+describe.only('Arrays - Exercise 10', () => {
   test('should return true if item exists in the array', () => {
-    const expected = 'Found blue'
+    const expected = 'Found Item'
     const actual = itemChecker('blue')
 
     expect(actual).toEqual(expected)
   })
 
   test('should return false if item does not exist in the array', () => {
-    const expected = 'yellow does not exist'
+    const expected = 'Item does not exist'
     const actual = itemChecker('yellow')
 
     expect(actual).toEqual(expected)

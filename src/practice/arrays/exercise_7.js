@@ -6,6 +6,13 @@
  * NOTE: use the reduce method
  */
 
-const largestNumber = () => {}
+const largestNumber = (numbersArray) => {
+  const doSomething = (acc, number) => {
+    if (number >= 5) {
+      return number;
+    }
+  }
+  return numbersArray.reduce(doSomething, 0)
+}
 
 export default largestNumber

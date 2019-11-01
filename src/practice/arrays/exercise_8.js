@@ -5,6 +5,16 @@
  * NOTE: use the every method
  */
 
-const evenNumbersChecker = () => {}
+const evenNumbersChecker = (inputArray) => {
+  const doSomething = (number) => {
+    if (number % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  return inputArray.every(doSomething)
+
+}
 
 export default evenNumbersChecker

@@ -7,6 +7,11 @@
  * NOTE: use the map method
  */
 
-const addNumberToNumbers = () => {}
+const addNumberToNumbers = (n, numbersArray) => {
+  const doSomething = (number) => {
+    return n + number;
+  }
+  return numbersArray.map(doSomething)
+}
 
 export default addNumberToNumbers

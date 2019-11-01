@@ -10,6 +10,12 @@
 
 const arrayToSearchIn = ['red', 'blue', 'green', 'pink']
 
-const itemChecker = () => {}
+const itemChecker = (searchItem) => {
+  if (arrayToSearchIn.includes(searchItem)) {
+    return "Found Item";
+  } else {
+    return "Item does not exist"
+  }
+}
 
 export default itemChecker
